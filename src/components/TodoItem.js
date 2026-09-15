@@ -4,7 +4,7 @@ function TodoItem({ todo, toggleComplete, deleteTodo, editTodo }) {
   const [isEditing, setIsEditing] = useState(false);
   const [editTitle, setEditTitle] = useState(todo.title);
   const [editDescription, setEditDescription] = useState(todo.description);
-  const [editImageFile, setEditImageFile] = useState(null);
+  const [, setEditImageFile] = useState(null);
   const [editImagePreview, setEditImagePreview] = useState(todo.image || null);
   const [isUploading, setIsUploading] = useState(false);
   const [error, setError] = useState('');
