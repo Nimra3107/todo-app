@@ -10,16 +10,26 @@ function App() {
   return (
     <BrowserRouter>
     <Routes>
+      
+    <Route
+        path="/login"
+        element={
+            <PublicRoute>
+                <Login />
+            </PublicRoute>
+        }
+    />
+
       <Route path='/register' element={
         <PublicRoute>
           <RegisterForm/>
         </PublicRoute>
       }/>
-      <Route path='/login' element={
+      {/* <Route path='/login' element={
         <PublicRoute>
           <Login/>
         </PublicRoute>
-      }/>
+      }/> */}
       <Route path='/todo' element={
         <ProtectedRoute>
           <TodoHome/>
