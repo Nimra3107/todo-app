@@ -149,7 +149,7 @@ const HomeTodo = () => {
         e.preventDefault();
         localStorage.removeItem("loggedInUserId");
 
-        navigate("/");
+        navigate("/login");
     };
 
 

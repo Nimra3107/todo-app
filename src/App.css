@@ -322,14 +322,6 @@ button:hover {
   }
 }
 
-
-
-
-
-
-
-
-
 /* ---------- Register Form ---------- */
 
 .register-container {
@@ -340,17 +332,17 @@ button:hover {
   background-color: var(--bg);
   padding: 20px;
   }
-  
+
   .register-form {
-  width: 100%;
-  max-width: 4800px;
-  padding: 35px;
-  background-color: var(--surface);
-  border: 1px solid var(--border);
-  border-top: 4px solid var(--accent);
-  border-radius: 8px;
-  box-shadow: 0 8px 25px rgba(28, 35, 31, 0.08);
-  }
+    width: 400px;
+    max-width: 100%;
+    padding: 35px 40px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--accent);
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(28, 35, 31, 0.08);
+    }
   
   .register-form h2 {
   text-align: center;
@@ -426,7 +418,7 @@ button:hover {
   .register-form a:hover {
   text-decoration: underline;
   }
-  /* ---------- Login Form ---------- */
+ 
   
   .login-container {
   min-height: 80vh;
@@ -436,17 +428,17 @@ button:hover {
   background-color: var(--bg);
   padding: 20px;
   }
-  
+
   .login-box {
-  width: 100%;
-  max-width: 480px;
-  padding: 35px;
-  background-color: var(--surface);
-  border: 1px solid var(--border);
-  border-top: 4px solid var(--accent);
-  border-radius: 8px;
-  box-shadow: 0 8px 25px rgba(28, 35, 31, 0.08);
-  }
+    width: 400px;
+    max-width: 100%;
+    padding: 35px 40px;
+    background-color: var(--surface);
+    border: 1px solid var(--border);
+    border-top: 4px solid var(--accent);
+    border-radius: 8px;
+    box-shadow: 0 8px 25px rgba(28, 35, 31, 0.08);
+    }
   
   .login-box h2 {
   text-align: center;
@@ -523,18 +515,14 @@ button:hover {
   }
   
   /* ---------- Mobile ---------- */
-  
-  @media (max-width: 480px) {
-  .register-form,
-  .login-box {
-  padding: 28px 22px;
-  }
-  
-  .register-form h2,
-  .login-box h2 {
-  font-size: 1.6rem;
-  }
-  }
+
+  @media (max-width: 540px) {
+    .register-form,
+    .login-box {
+    width: 100%;
+    padding: 28px 22px;
+    }
+    }
 
 .todo-table {
     width: 100%;
