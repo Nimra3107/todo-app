@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from "react";
+//import React, { useEffect, useState } from "react";
+import { useEffect , useState } from "react";
 
 import TodoForm from "./components/TodoForm";
 import TodoList from "./components/TodoList";
@@ -14,6 +15,7 @@ const HomeTodo = () => {
     const loggedInUserId = localStorage.getItem("loggedInUserId");
 
     // GET TODOS
+    useEffect(() => {
     const getTodos = async () => {
         const { data, error } = await supabase
             .from("todos")
@@ -29,11 +31,13 @@ const HomeTodo = () => {
         }
         setTodos(data);
     };
+    getTodos();
+}, [loggedInUserId]);
 
     // LOAD TODOS WHEN PAGE OPENS
-    useEffect(() => {
-        getTodos();
-    }, []);
+    // useEffect(() => {
+    //     getTodos();
+    // }, []);
 
     // ADD TODO
     const addTodo = async (title, description, image) => {
